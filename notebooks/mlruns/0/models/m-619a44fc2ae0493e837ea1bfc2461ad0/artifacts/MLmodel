@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/LARISYS/Desktop/mlops-project/notebooks/mlruns/0/models/m-619a44fc2ae0493e837ea1bfc2461ad0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-619a44fc2ae0493e837ea1bfc2461ad0
+model_size_bytes: 957
+model_uuid: m-619a44fc2ae0493e837ea1bfc2461ad0
+prompts: null
+run_id: 9c5c56d33f5a4a8aaa17dacae762ea86
+utc_time_created: '2025-07-28 09:42:01.493585'

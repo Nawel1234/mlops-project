@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/LARISYS/Desktop/mlops-project/notebooks/mlruns/0/models/m-668d0da172244edc909a616f11bec0e2/artifacts
+creation_timestamp: 1753695806436
+experiment_id: '0'
+last_updated_timestamp: 1753695811684
+model_id: m-668d0da172244edc909a616f11bec0e2
+model_type: null
+name: model
+source_run_id: c71d31ab856641b69ebbd68b56e9265b
+status: 2
+status_message: null

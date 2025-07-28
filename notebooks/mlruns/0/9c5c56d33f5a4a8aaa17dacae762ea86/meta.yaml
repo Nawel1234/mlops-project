@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/LARISYS/Desktop/mlops-project/notebooks/mlruns/0/9c5c56d33f5a4a8aaa17dacae762ea86/artifacts
+end_time: 1753695724844
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9c5c56d33f5a4a8aaa17dacae762ea86
+run_name: classy-panda-339
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753695721335
+status: 3
+tags: []
+user_id: LARISYS

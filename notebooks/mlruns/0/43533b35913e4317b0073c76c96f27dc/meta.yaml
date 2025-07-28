@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/LARISYS/Desktop/mlops-project/notebooks/mlruns/0/43533b35913e4317b0073c76c96f27dc/artifacts
+end_time: 1753696198063
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 43533b35913e4317b0073c76c96f27dc
+run_name: indecisive-kite-688
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753696194589
+status: 3
+tags: []
+user_id: LARISYS

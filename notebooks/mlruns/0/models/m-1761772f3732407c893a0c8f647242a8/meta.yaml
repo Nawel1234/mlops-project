@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/LARISYS/Desktop/mlops-project/notebooks/mlruns/0/models/m-1761772f3732407c893a0c8f647242a8/artifacts
+creation_timestamp: 1753696194696
+experiment_id: '0'
+last_updated_timestamp: 1753696198049
+model_id: m-1761772f3732407c893a0c8f647242a8
+model_type: null
+name: logistic_regression_model
+source_run_id: 43533b35913e4317b0073c76c96f27dc
+status: 2
+status_message: null

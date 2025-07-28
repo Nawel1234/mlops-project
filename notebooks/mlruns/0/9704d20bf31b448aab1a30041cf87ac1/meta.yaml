@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/LARISYS/Desktop/mlops-project/notebooks/mlruns/0/9704d20bf31b448aab1a30041cf87ac1/artifacts
+end_time: 1753695699966
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9704d20bf31b448aab1a30041cf87ac1
+run_name: valuable-auk-491
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753695693787
+status: 3
+tags: []
+user_id: LARISYS

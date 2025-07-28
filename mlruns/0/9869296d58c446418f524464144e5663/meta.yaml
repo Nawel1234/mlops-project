@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/LARISYS/Desktop/mlops-project/mlruns/0/9869296d58c446418f524464144e5663/artifacts
+end_time: 1753699247744
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9869296d58c446418f524464144e5663
+run_name: capricious-elk-537
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753699242443
+status: 3
+tags: []
+user_id: LARISYS
