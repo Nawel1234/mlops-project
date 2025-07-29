@@ -1,51 +1,53 @@
-# Projet MLOps - Déploiement d'un modèle de Machine Learning avec CI/CD et Monitoring
+# Projet MLOps : Pipeline complet de déploiement d’un modèle de Machine Learning
 
-## 🎯 Description du projet
+## 📖 Description
 
-Dans ce projet personnel orienté MLOps, j’ai conçu et déployé un pipeline complet de machine learning intégrant les meilleures pratiques d’automatisation, de tests, de containerisation et de déploiement. Ce projet illustre mes compétences en automatisation, qualité logicielle, et industrialisation d’un modèle ML.
+Ce projet illustre la conception, l’entraînement, le déploiement et le monitoring d’un modèle de machine learning en suivant les meilleures pratiques MLOps.  
+Il intègre la gestion des expériences, la containerisation, les tests automatisés, l’intégration continue/déploiement continu (CI/CD) ainsi que le monitoring applicatif.
 
-L’objectif principal est de rendre un modèle ML accessible via une API REST, avec une intégration continue (CI), un déploiement continu (CD), et un monitoring de performance.
+## ⚙️ Architecture & Technologies
 
----
+- **Python & scikit-learn** : Modélisation et entraînement d’un classifieur de fleurs Iris  
+- **MLflow** : Gestion et suivi des expériences, métriques et modèles  
+- **FastAPI** : Développement d’une API REST performante pour la prédiction  
+- **Docker** : Containerisation de l’application pour portabilité et scalabilité  
+- **GitHub Actions** : Pipeline CI/CD pour automatiser tests et déploiement  
+- **Pytest** : Assurance qualité via tests unitaires  
+- **Prometheus & prometheus-fastapi-instrumentator** : Monitoring et métriques applicatives exposées pour intégration avec outils de supervision  
 
-## 🔧 Technologies utilisées
+## 🚀 Fonctionnalités clés
 
-- **Python / scikit-learn** : Entraînement, évaluation et sérialisation du modèle ML.
-- **MLflow** : Gestion du cycle de vie du modèle, suivi des expériences, versioning et packaging.
-- **FastAPI** : Création d’une API REST rapide et moderne pour exposer le modèle.
-- **Pytest** : Tests unitaires pour assurer la qualité et la robustesse du code.
-- **Docker** : Containerisation de l’application pour garantir portabilité et reproductibilité.
-- **GitHub Actions** : Pipeline CI/CD pour automatiser les tests et déploiements.
-- **Prometheus + prometheus-fastapi-instrumentator** : Monitoring des métriques de l’API.
+- Entraînement reproductible avec traçabilité complète des métriques grâce à MLflow  
+- API REST légère et performante pour servir le modèle en production  
+- Pipeline CI/CD automatisé garantissant la robustesse du code  
+- Monitoring intégré pour suivi en temps réel de la santé de l’application  
+- Code modulaire, maintenable et extensible  
 
----
-
-## 📌 Rôle de MLflow
-
-MLflow est un outil clé du projet pour :
-
-- **Suivre les expériences** : enregistrer automatiquement les paramètres, métriques et artefacts.
-- **Gérer les modèles** : sauvegarder et versionner les modèles entraînés.
-- **Faciliter le déploiement** : exporter le modèle dans un format réutilisable par l’API FastAPI.
-- **Assurer la reproductibilité** des résultats en centralisant les informations du modèle.
-
----
-
-## 🚀 Fonctionnalités principales
-
-- Entraînement et sauvegarde du modèle Iris avec MLflow.
-- API REST FastAPI pour prédire la classe d’une fleur Iris.
-- Tests automatisés avec pytest.
-- Containerisation Docker.
-- CI/CD avec GitHub Actions déclenché à chaque push sur la branche `master`.
-- Monitoring des endpoints API exposant des métriques Prometheus.
-
----
-
-## 📥 Installation et utilisation
-
-1. **Cloner le dépôt :**
+## 💾 Installation & Usage
 
 ```bash
 git clone https://github.com/Nawel1234/mlops-project.git
 cd mlops-project
+python -m venv venv
+source venv/bin/activate       # Linux/macOS
+venv\Scripts\activate          # Windows PowerShell
+pip install -r requirements.txt
+
+
+## 🚀 Entraînement du modèle
+
+python train_model.py
+
+## 🚀 Démarrer l’API FastAPI
+
+uvicorn app.main:app --reload
+L’API sera accessible sur http://127.0.0.1:8000.
+
+## Exécution des tests unitaires
+pytest
+
+🔧 CI/CD & Monitoring
+
+Le pipeline GitHub Actions automatise la construction, les tests, et le déploiement continu
+
+Les métriques Prometheus sont exposées via l’API, prêtes à être intégrées dans un tableau de bord de monitoring
