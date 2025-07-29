@@ -1,5 +1,7 @@
 import os
 from fastapi import FastAPI
+from prometheus_fastapi_instrumentator import Instrumentator
+
 from app.schema import IrisRequest, IrisResponse
 from app.utils import ModelLoader
 
@@ -9,9 +11,12 @@ app = FastAPI(
     version="1.0"
 )
 
-# Construire le chemin absolu vers le modèle
+# Intégration de Prometheus
+Instrumentator().instrument(app).expose(app)
+
+# Chargement du modèle
 model_dir = os.path.abspath("model/logistic_regression_model")
-model_dir = model_dir.replace("\\", "/")  # pour éviter problème sur Windows
+model_dir = model_dir.replace("\\", "/")  # Compatibilité Windows
 model_loader = ModelLoader(model_dir)
 
 @app.get("/")
